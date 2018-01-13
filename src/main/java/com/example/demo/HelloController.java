@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import java.util.Date;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -32,6 +34,7 @@ public class HelloController {
 		Student s1 = new Student();
 		s1.setId(1);
 		s1.setName("张三");
+		s1.setCreateTime(new Date());
 		return s1;
 	}
 }
