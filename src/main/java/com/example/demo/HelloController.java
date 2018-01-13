@@ -35,6 +35,7 @@ public class HelloController {
 		s1.setId(1);
 		s1.setName("张三");
 		s1.setCreateTime(new Date());
+		s1.setRemark("这是一个备注信息");
 		return s1;
 	}
 }
