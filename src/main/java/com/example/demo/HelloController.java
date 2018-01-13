@@ -3,6 +3,8 @@ package com.example.demo;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.entity.Student;
+
 /**
  * 在这里使用RestController  （等待于 @Controller 和 @RequestBody）
  * @author xueshun
@@ -19,5 +21,17 @@ public class HelloController {
 	@RequestMapping(value="/hello")
 	public String hello() {
 		return "hello";
+	}
+	
+	/**
+	 * Spring Boot默认使用的json解析框架是jackson
+	 * @return
+	 */
+	@RequestMapping(value="/getStudent")
+	public Student getStudent() {
+		Student s1 = new Student();
+		s1.setId(1);
+		s1.setName("张三");
+		return s1;
 	}
 }
