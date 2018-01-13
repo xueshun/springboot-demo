@@ -33,7 +33,7 @@ public class HelloController {
 	public Student getStudent() {
 		Student s1 = new Student();
 		s1.setId(1);
-		s1.setName("张三试试");
+		s1.setName("张三试试111");
 		s1.setCreateTime(new Date());
 		s1.setRemark("这是一个备注信息！！！");
 		return s1;
