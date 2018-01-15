@@ -33,7 +33,17 @@ public class HelloController {
 	public Student getStudent() {
 		Student s1 = new Student();
 		s1.setId(1);
-		s1.setName("张三试试111");
+		s1.setName("张三试试111哎哎哎");
+		s1.setCreateTime(new Date());
+		s1.setRemark("这是一个备注信息！！！");
+		return s1;
+	}
+	
+	@RequestMapping(value="/getStudent1")
+	public Student getStudent01() {
+		Student s1 = new Student();
+		s1.setId(1);
+		s1.setName("张三试试111哎哎哎");
 		s1.setCreateTime(new Date());
 		s1.setRemark("这是一个备注信息！！！");
 		return s1;
